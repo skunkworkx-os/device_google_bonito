@@ -280,3 +280,6 @@ endif
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b4s4-setup.sh
 
 -include vendor/google_devices/bonito/proprietary/BoardConfigVendor.mk
+
+# Fix broke ELF errors
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
